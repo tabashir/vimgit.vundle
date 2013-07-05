@@ -1,0 +1,46 @@
+# Custom commands and autocommands
+command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
+command! -range=% -nargs=0 Tab2Space execute "<line1>,<line2>s/^\\t\\+/\\=substitute(submatch(0), '\\t', repeat(' ', ".&ts."), 'g')"
+command! -range=% -nargs=0 Space2Tab execute "<line1>,<line2>s/^\\( \\{".&ts."\\}\\)\\+/\\=substitute(submatch(0), ' \\{".&ts."\\}', '\\t', 'g')"
+
+"easy syntax swapping
+command! SyntaxPerl set syntax=perl   ai et ts=4 sw=4 tw=0<CR>
+command! SyntaxPython set syntax=python ai et ts=4 sw=4 tw=0<CR>
+command! SyntaxRuby set syntax=ruby   ai et ts=2 sw=2 tw=0<CR>
+
+" Ruby Setup
+au BufEnter *.rb set syntax=ruby ai et ts=2 sw=2 tw=0
+"let g:rubytest_in_quickfix = 1 
+"Tcomment no extra indents
+command! SetRubyComment :call TCommentDefineType("ruby", "#%s")
+"Change which file opens after executing :Rails command
+let g:rails_default_file='config/database.yml'
+
+" Python Setup
+autocmd BufRead,BufNewFile *.py syntax on
+autocmd BufRead,BufNewFile *.py set ai
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+
+" PHP Setup
+" run file with PHP CLI (F5)
+autocmd FileType php noremap <F5> :w!<CR>:!php %<CR>
+" PHP parser check (CTRL-F5)
+autocmd FileType php noremap <C-F5> :!php -l %<CR>
+
+" Coffee Setup
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+command -nargs=1 C CoffeeCompile | :<args>
+
+" XmlPretty
+command! -range=% Xmlpretty :call XmlPretty(<line1>, <line2>)
+
+" Git commit
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" see what highlighting rules are in place on current line
+command! CurrentHighlight :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . "> trans<" . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"
+
+"au VimLeavePre * mksession! project.session
+command! WQ :mksession! project.session | qall!
+
+

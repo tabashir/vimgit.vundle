@@ -1,0 +1,107 @@
+" KEY MAPPING
+
+" buffer navigation (alt-left, alt-right)
+noremap [1;3C :bnext<CR>
+noremap [1;3D :bprevious<CR>
+
+" allow arrow keys with modifiers in tmux/screen
+if &term =~ '^screen'
+    " tmux will send xterm-style keys when its xterm-keys option is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
+" DISABLE ARROW KEYS
+" noremap  <Up> ""
+" noremap! <Up> <Esc>
+" noremap  <Down> ""
+" noremap! <Down> <Esc>
+" noremap  <Left> ""
+" noremap! <Left> <Esc>
+" noremap  <Right> ""
+" noremap! <Right> <Esc>
+" END DISABLE ARROW KEYS
+
+" next/prev row not line
+noremap j gj 
+noremap k gk
+" insert line below with enter
+"map <CR> O<Esc>j
+" insert line above with enter
+map <CR> o<Esc>
+
+inoremap <Nul> <C-n>
+
+noremap <F2> :wall \|!ctags -R --extra=+f<CR>
+noremap! <F2> <ESC><F2>
+
+noremap <silent> <F3> :NERDTreeToggle<CR>
+noremap! <silent> <F3> <ESC><F3>
+
+noremap <silent> <F4> :Tlist <CR>
+noremap! <silent> <F4> <ESC><F4>
+
+noremap <S-Tab> <C-W><C-W>
+noremap! <S-Tab> <C-W><C-W>
+
+noremap <C-F5> :wall<CR>:!rake<CR>
+noremap! <C-F5> <ESC><C-F5>
+
+noremap <F5> :wall \|:!ruby %<CR>
+noremap! <F5> <ESC><F5>
+
+noremap <S-F5> :wall \|:.Rake!<CR>
+noremap! <S-F5> <ESC><S-F5>
+
+" buffer copy/paste
+vmap <F7> "+ygv"zy`>
+vmap <S-F7> "+p
+nmap <S-F7> "+p
+imap <S-F7> <ESC>"+p
+
+noremap <silent> <F9> :TComment<CR> 
+noremap! <silent> <F9> <ESC><F9>
+
+noremap <silent> <C-F9> :TCommentBlock<CR> 
+noremap! <silent> <C-F9> <ESC><C-F9>
+
+noremap <silent> <F11> :TlistToggle<CR>
+noremap! <silent> <F11> <ESC><F11>
+
+"noremap gt :tag <C-R><C-W><CR>
+noremap gt :tj <C-R><C-W><CR>
+
+noremap err :cope <CR> <CR> :ccl <CR>
+
+noremap <silent> ,,f <ESC>:CommandT<CR>
+noremap <silent> ,,b <ESC>:CommandTBuffer<CR>
+noremap <silent> ,,j <ESC>:CommandTJump<CR>
+
+command! ToggleWrap :set invwrap
+
+" Centre screen on current line stuff
+noremap <space> zz
+noremap n nzz
+noremap N Nzz
+
+
+" Plugin Specific
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
+let g:SuperTabMappingTabLiteral = '<tab>'
+let g:SuperTabDefaultCompletionType = "context"
+
+let g:tcommentMapLeader1=''
+let g:tcommentMapLeader2=''
+
+noremap! ZQ WQ
+
+"This allows for change paste motion cp{motion}
+nmap <silent> cp :set opfunc=ChangePaste<CR>g@
+
+let g:ctrlp_map = '<c-f>'
+
+noremap <c-b> :CtrlPBuffer<CR>
+"noremap <c-p> :CtrlPMRUFiles<CR>

@@ -1,0 +1,68 @@
+" Visual
+set showcmd
+set timeoutlen=500
+set cf  " Enable error files & error jumping.
+set clipboard+=unnamed  " Yanks go on clipboard instead.
+set history=256  " Number of things to remember in history.
+set autowrite  " Writes on make/shell commands
+set ruler  " Ruler on
+set nu  " Line numbers on
+set wrap  " Line wrapping
+set hlsearch  "search highlight
+set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+set cursorline
+
+" Formatting 
+set ts=2  " Tabs are 2 spaces
+set bs=2  " Backspace over everything in insert mode
+set shiftwidth=2  " Tabs under smart indent
+set incsearch
+set cinoptions=:0,p0,t0
+set cinwords=if,else,while,do,for,switch,case
+set formatoptions=tcqr
+set ignorecase smartcase
+set scrolloff=5
+set autoread
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set textwidth=0
+
+set showmatch  " Show matching brackets.
+set mat=5  " Bracket blinking.
+set laststatus=2  " Always show status line.
+
+"let g:buftabs_in_statusline=1
+let g:buftabs_active_highlight_group="Question"
+
+"Visual Bell no Sound
+set noerrorbells  " No noise.
+set visualbell
+
+" Mouse selection 
+set mouse +=a
+
+"Colours
+set background=dark
+" let g:solarized_termcolors=16
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+" set t_Co=16
+" colorscheme solarized
+
+let g:Powerline_theme='short'
+let g:Powerline_colorscheme='solarized16_dark'
+
+"highlighting
+hi CursorLine term=bold cterm=bold gui=bold
+hi Error term=underline cterm=underline ctermfg=5 gui=underline
+
+" Syntastic
+let g:syntastic_coffee_lint_options = " -f ~/.vim/coffeelint.json "
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=1
+let g:syntastic_loc_list_height=5
+let g:syntastic_enable_signs=1
+let g:syntastic_enable_highlighting = 0
+let g:JSLintHighlightErrorLine = 0

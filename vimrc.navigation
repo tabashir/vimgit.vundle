@@ -1,0 +1,19 @@
+" add all files to search path so can use completion
+set path=.,/usr/include,,**
+
+"set viminfo=%100,'100,/100,h,@500,:100
+set viminfo='1000,f1,<500
+"
+" set viminfo file to remember just current folder info
+command! GlobalInfo :set viminfo='1000,f1,<500,n~/.viminfo
+command! LocalInfo :set  viminfo='1000,f1,<500,n.viminfo
+"
+"ack
+let g:ackprg="ack -H --nocolor --nogroup --column --smart-case --type-set coffee=.coffee"
+
+function! ChangePaste(type, ...)
+    silent exe "normal! `[v`]\"_c"
+    silent exe "normal! p"
+endfunction
+
+
