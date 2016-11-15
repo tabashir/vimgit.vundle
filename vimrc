@@ -19,8 +19,8 @@ endfunction
 
 call SafeLoad("vimrc.before")
 call SafeLoad("vimrc.bundles")
-call SafeLoad("vimrc.visual")
 call SafeLoad("vimrc.navigation")
+call SafeLoad("vimrc.visual")
 call SafeLoad("vimrc.commands")
 
 filetype plugin indent on  " required!

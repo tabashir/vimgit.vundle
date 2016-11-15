@@ -1,4 +1,5 @@
 " Brief help
+"
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles
 " :BundleSearch(!) foo - search(or refresh cache first) for foo
@@ -10,93 +11,90 @@
 Bundle 'https://github.com/Lokaltog/powerline.git'
 Bundle 'https://github.com/stephenmckinney/vim-solarized-powerline'
 Bundle 'https://github.com/tomtom/quickfixsigns_vim.git'
-Bundle 'git://github.com/vim-scripts/highlight.vim.git'
+Bundle 'https://github.com/vim-scripts/highlight.vim.git'
+Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
+Bundle 'https://github.com/zhaocai/GoldenView.Vim.git'
+Bundle 'https://github.com/vim-scripts/IndexedSearch.git'
+Bundle 'https://github.com/vim-scripts/ZoomWin.git'
+" Bundle 'https://github.com/vim-scripts/errormarker.vim.git'
 
 " Navigation
-Bundle 'git://github.com/kien/ctrlp.vim.git'
-Bundle 'git://github.com/Lokaltog/vim-easymotion.git'
-Bundle 'git://github.com/scrooloose/nerdtree.git'
-Bundle 'git://github.com/vim-scripts/ZoomWin.git'
-Bundle 'git://github.com/majutsushi/tagbar.git'
-Bundle 'git://github.com/vim-scripts/VimExplorer.git'
-Bundle 'git://github.com/mileszs/ack.vim.git'
-Bundle 'git://github.com/rking/ag.vim.git'
-Bundle 'git://github.com/vim-scripts/FuzzyFinder'
+Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/scrooloose/nerdtree.git'
+Bundle 'https://github.com/vim-scripts/VimExplorer.git'
+Bundle 'https://github.com/vim-scripts/DirDiff.vim.git'
+Bundle 'https://github.com/majutsushi/tagbar.git'
+Bundle 'https://github.com/Lokaltog/vim-easymotion.git'
+Bundle 'https://github.com/rking/ag.vim.git'
+Bundle 'https://github.com/vim-scripts/FuzzyFinder'
+Bundle 'https://github.com/int3/vim-taglist-plus.git'
+Bundle 'https://github.com/vim-scripts/Rename.git'
+" Bundle 'https://github.com/vim-scripts/arpeggio.git'
+" Bundle 'https://github.com/xolox/vim-easytags.git'
 
 " Buffers / Session
-Bundle 'https://github.com/fholgado/minibufexpl.vim.git'
-Bundle 'git://github.com/terryma/vim-multiple-cursors.git'
-Bundle 'git://github.com/torandu/vim-bufexplorer.git'
-Bundle 'git://github.com/vim-scripts/bufkill.vim.git'
-Bundle 'git://github.com/vim-scripts/Session-manager.git'
+Bundle 'https://github.com/ton/vim-bufsurf.git'
+Bundle 'https://github.com/terryma/vim-multiple-cursors.git'
+Bundle 'https://github.com/vim-scripts/bufkill.vim.git'
+Bundle 'https://github.com/vim-scripts/Session-manager.git'
+" Bundle 'https://github.com/torandu/vim-bufexplorer.git'
+" Bundle 'https://github.com/vim-scripts/buftabs.git'
 
 " Utility
-Bundle 'git://github.com/vim-scripts/L9.git'
-Bundle 'git://github.com/vim-scripts/genutils.git'
-Bundle 'git://github.com/vim-scripts/multvals.vim.git'
+Bundle 'https://github.com/vim-scripts/L9.git'
+Bundle 'https://github.com/vim-scripts/genutils.git'
+Bundle 'https://github.com/vim-scripts/multvals.vim.git'
 
 " Helpers
-Bundle 'git://github.com/vim-scripts/YankRing.vim.git'
-Bundle 'git://github.com/sjl/gundo.vim.git'
-Bundle 'git://github.com/mbbill/undotree.git'
-Bundle 'git://github.com/ervandew/supertab.git'
-Bundle 'git://github.com/AndrewRadev/splitjoin.vim.git'
+Bundle 'https://github.com/vim-scripts/YankRing.vim.git'
+Bundle 'https://github.com/sjl/gundo.vim.git'
+Bundle 'https://github.com/mbbill/undotree.git'
+Bundle 'https://github.com/AndrewRadev/splitjoin.vim.git'
+Bundle 'https://github.com/tpope/vim-repeat.git'
+Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'https://github.com/msanders/snipmate.vim.git'
+Bundle 'https://github.com/xuhdev/SingleCompile.git'
+Bundle 'https://github.com/ervandew/supertab.git'
+Bundle 'https://github.com/tpope/vim-abolish.git'
 
-" Tidy
+" Formatting / Syntax
+Bundle 'https://github.com/Raimondi/delimitMate.git'
+Bundle 'https://github.com/bronson/vim-trailing-whitespace.git'
+Bundle 'https://github.com/scrooloose/syntastic.git'
+Bundle 'https://github.com/godlygeek/tabular.git'
+Bundle 'https://github.com/vim-scripts/tComment.git'
+
+" XML/HTML
+Bundle 'https://github.com/othree/xml.vim.git'
+Bundle 'https://github.com/vim-scripts/XmlPretty.git'
+Bundle 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Javascript
+" Bundle 'https://github.com/hallettj/jslint.vim.git' - disabled because it
+" uses quickfix not locationlist which messes up grep results
+Bundle 'https://github.com/kchmck/vim-coffee-script.git'
+Bundle 'https://github.com/leshill/vim-json.git'
+Bundle 'https://github.com/maksimr/vim-jsbeautify.git'
+Bundle 'einars/js-beautify'
+" Bundle 'https://github.com/vim-scripts/jQuery.git'
+" Bundle 'https://github.com/pangloss/vim-javascript.git'
+"Bundle 'git://github.com/tpope/vim-jdaddy.git'
 
 " Ruby
-Bundle 'git://github.com/AndrewRadev/switch.vim.git'
-Bundle 'https://github.com/bronson/vim-trailing-whitespace.git'
-Bundle 'git://github.com/christoomey/vim-space.git'
-Bundle 'git://github.com/depuracao/vim-rdoc.git'
-Bundle 'git://github.com/ecomba/vim-ruby-refactoring.git'
-Bundle 'git://github.com/godlygeek/tabular.git'
-Bundle 'git://github.com/hallettj/jslint.vim.git'
-Bundle 'git://github.com/int3/vim-taglist-plus.git'
-Bundle 'git://github.com/kchmck/vim-coffee-script.git'
-Bundle 'git://github.com/leshill/vim-json.git'
-Bundle 'git://github.com/maksimr/vim-jsbeautify.git'
-Bundle 'git://github.com/msanders/snipmate.vim.git'
-Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
-Bundle 'git://github.com/othree/xml.vim.git'
-" Bundle 'git://github.com/pangloss/vim-javascript.git'
-Bundle 'git://github.com/Raimondi/delimitMate.git'
-Bundle 'git://github.com/rstacruz/sparkup', {'rtp': 'vim/'}
-" Bundle 'git://github.com/scrooloose/nerdcommenter'
-Bundle 'git://github.com/scrooloose/syntastic.git'
-Bundle 'git://github.com/Shougo/neocomplcache.vim.git'
-Bundle 'git://github.com/skalnik/vim-vroom.git'
-Bundle 'git://github.com/tpope/vim-abolish.git'
-Bundle 'git://github.com/tpope/vim-fugitive.git'
-Bundle 'git://github.com/tpope/vim-git.git'
-Bundle 'git://github.com/tpope/vim-markdown.git'
-Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'git://github.com/tpope/vim-repeat.git'
-Bundle 'git://github.com/tpope/vim-surround.git'
-Bundle 'git://github.com/tpope/vim-unimpaired.git'
-Bundle 'git://github.com/tsaleh/vim-matchit.git'
-Bundle 'git://github.com/vim-ruby/vim-ruby.git'
-" Bundle 'git://github.com/xolox/vim-easytags.git'
-Bundle 'git://github.com/xuhdev/SingleCompile.git'
-Bundle 'git://github.com/zhaocai/GoldenView.Vim.git'
-Bundle 'git://github.com/vim-scripts/arpeggio.git'
-" Bundle 'git://github.com/vim-scripts/buftabs.git'
-Bundle 'git://github.com/vim-scripts/DirDiff.vim.git'
-" Bundle 'git://github.com/vim-scripts/errormarker.vim.git'
-Bundle 'git://github.com/vim-scripts/IndentAnything.git'
-Bundle 'git://github.com/vim-scripts/IndexedSearch.git'
-" Bundle 'git://github.com/vim-scripts/jQuery.git'
-Bundle 'git://github.com/vim-scripts/Rename.git'
-Bundle 'git://github.com/vim-scripts/Rubytest.vim.git'
-Bundle 'git://github.com/vim-scripts/tComment.git'
-Bundle 'git://github.com/kchmck/vim-coffee-script.git'
-Bundle 'git://github.com/vim-scripts/XmlPretty.git'
-Bundle 'git://github.com/astashov/vim-ruby-debugger.git'
-"Bundle 'airblade/vim-gitgutter'
+Bundle 'https://github.com/vim-ruby/vim-ruby.git'
+Bundle 'https://github.com/tpope/vim-rails.git'
+Bundle 'https://github.com/depuracao/vim-rdoc.git'
+Bundle 'https://github.com/ecomba/vim-ruby-refactoring.git'
+Bundle 'https://github.com/skalnik/vim-vroom.git'
+Bundle 'https://github.com/janx/vim-rubytest'
+Bundle 'https://github.com/astashov/vim-ruby-debugger.git'
+
+" SCM
+Bundle 'https://github.com/tpope/vim-git.git'
+Bundle 'https://github.com/tpope/vim-fugitive.git'
 
 
-" Bundle 'git://github.com/benmills/vimux.git'
+
+
 
 

@@ -16,4 +16,4 @@ function! ChangePaste(type, ...)
     silent exe "normal! p"
 endfunction
 
-
+set suffixesadd+=.js

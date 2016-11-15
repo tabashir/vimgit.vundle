@@ -1,8 +1,8 @@
 " KEY MAPPING
 
 " buffer navigation (alt-left, alt-right)
-noremap [1;3C :bnext<CR>
-noremap [1;3D :bprevious<CR>
+noremap [1;3C :BufSurfForward<CR>
+noremap [1;3D :BufSurfBack<CR>
 
 " allow arrow keys with modifiers in tmux/screen
 if &term =~ '^screen'
@@ -46,13 +46,13 @@ noremap! <silent> <F4> <ESC><F4>
 noremap <S-Tab> <C-W><C-W>
 noremap! <S-Tab> <C-W><C-W>
 
-noremap <C-F5> :wall<CR>:!rake<CR>
+noremap <C-F5> :wall \|:SingleCompile<CR>
 noremap! <C-F5> <ESC><C-F5>
 
-noremap <F5> :wall \|:!ruby %<CR>
+noremap <F5> :wall \|:SingleCompileRun<CR>
 noremap! <F5> <ESC><F5>
 
-noremap <S-F5> :wall \|:.Rake!<CR>
+noremap <S-F5> :wall \|:!mocha %<CR>
 noremap! <S-F5> <ESC><S-F5>
 
 " buffer copy/paste
@@ -105,3 +105,9 @@ let g:ctrlp_map = '<c-f>'
 
 noremap <c-b> :CtrlPBuffer<CR>
 "noremap <c-p> :CtrlPMRUFiles<CR>
+"
+
+
+map <Leader>k <Plug>RubyTestRun
+map <Leader>kk <Plug>RubyFileRun
+map <Leader>kj <Plug>RubyLastTestRun

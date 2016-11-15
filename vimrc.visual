@@ -9,7 +9,6 @@ set ruler  " Ruler on
 set nu  " Line numbers on
 set wrap  " Line wrapping
 set hlsearch  "search highlight
-set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 set cursorline
 
 " Formatting 
@@ -24,9 +23,10 @@ set ignorecase smartcase
 set scrolloff=5
 set autoread
 set autoindent
-set expandtab
+set noexpandtab
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set textwidth=0
 
 set showmatch  " Show matching brackets.
@@ -48,10 +48,10 @@ set background=dark
 " let g:solarized_termcolors=16
 " let g:solarized_visibility = "high"
 " let g:solarized_contrast = "high"
-" set t_Co=16
+set t_Co=256
 " colorscheme solarized
 
-let g:Powerline_theme='short'
+let g:Powerline_theme='fancy'
 let g:Powerline_colorscheme='solarized16_dark'
 
 "highlighting
