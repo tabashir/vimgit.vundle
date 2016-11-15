@@ -2,7 +2,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=$VIM_HOME/bundle/vundle/
-set rtp+=$VIM_HOME/bundle/powerline/powerline/bindings/vim
+"set rtp+=$VIM_HOME/bundle/powerline/powerline/bindings/vim
 call vundle#rc("$VIM_HOME/bundle/")
 
 
@@ -20,6 +20,7 @@ endfunction
 call SafeLoad("vimrc.before")
 call SafeLoad("vimrc.bundles")
 call SafeLoad("vimrc.navigation")
+
 call SafeLoad("vimrc.visual")
 call SafeLoad("vimrc.commands")
 

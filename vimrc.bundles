@@ -8,8 +8,8 @@
 " see :h vundle for more details or wiki for FAQ
 
 " Visual
-Bundle 'https://github.com/Lokaltog/powerline.git'
-Bundle 'https://github.com/stephenmckinney/vim-solarized-powerline'
+Bundle 'https://github.com/vim-airline/vim-airline.git'
+Bundle 'https://github.com/vim-airline/vim-airline-themes.git' 
 Bundle 'https://github.com/tomtom/quickfixsigns_vim.git'
 Bundle 'https://github.com/vim-scripts/highlight.vim.git'
 Bundle 'https://github.com/nathanaelkane/vim-indent-guides.git'
@@ -19,7 +19,7 @@ Bundle 'https://github.com/vim-scripts/ZoomWin.git'
 " Bundle 'https://github.com/vim-scripts/errormarker.vim.git'
 
 " Navigation
-Bundle 'https://github.com/kien/ctrlp.vim.git'
+Bundle 'https://github.com/ctrlpvim/ctrlp.vim.git' 
 Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'https://github.com/vim-scripts/VimExplorer.git'
 Bundle 'https://github.com/vim-scripts/DirDiff.vim.git'
@@ -37,7 +37,6 @@ Bundle 'https://github.com/ton/vim-bufsurf.git'
 Bundle 'https://github.com/terryma/vim-multiple-cursors.git'
 Bundle 'https://github.com/vim-scripts/bufkill.vim.git'
 Bundle 'https://github.com/vim-scripts/Session-manager.git'
-" Bundle 'https://github.com/torandu/vim-bufexplorer.git'
 " Bundle 'https://github.com/vim-scripts/buftabs.git'
 
 " Utility

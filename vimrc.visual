@@ -51,8 +51,10 @@ set background=dark
 set t_Co=256
 " colorscheme solarized
 
-let g:Powerline_theme='fancy'
-let g:Powerline_colorscheme='solarized16_dark'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='base16'
+
 
 "highlighting
 hi CursorLine term=bold cterm=bold gui=bold
