@@ -34,7 +34,7 @@ set mat=5  " Bracket blinking.
 set laststatus=2  " Always show status line.
 
 "let g:buftabs_in_statusline=1
-let g:buftabs_active_highlight_group="Question"
+"let g:buftabs_active_highlight_group="Question"
 
 "Visual Bell no Sound
 set noerrorbells  " No noise.
@@ -56,6 +56,10 @@ let g:airline#extensions#tabline#enabled = 1
 " let g:airline_theme='base16'
 let g:airline_theme='lucius'
 
+"if !exists('g:airline_symbols')
+"  let g:airline_symbols = {}
+"endif
+"let g:airline_symbols.space = "\ua0"
 
 "highlighting
 hi CursorLine term=bold cterm=bold gui=bold
