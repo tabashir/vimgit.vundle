@@ -84,7 +84,7 @@ Plugin 'https://github.com/tpope/vim-rails.git'
 Plugin 'https://github.com/depuracao/vim-rdoc.git'
 Plugin 'https://github.com/ecomba/vim-ruby-refactoring.git'
 Plugin 'https://github.com/skalnik/vim-vroom.git'
-Plugin 'https://github.com/janx/vim-rubytest'
+" Plugin 'https://github.com/janx/vim-rubytest'
 Plugin 'https://github.com/astashov/vim-ruby-debugger.git'
 
 " SCM

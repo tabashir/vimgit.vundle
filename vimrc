@@ -10,9 +10,10 @@ endfunction
 
 set rtp+=$VIM_HOME/bundle/Vundle.vim/
 call vundle#begin("$VIM_HOME/bundle/")
+"call vundle#begin()
 
 " let Vundle manage Vundle - required!
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 call SafeLoad("vimrc.before")
 call SafeLoad("vimrc.bundles")
