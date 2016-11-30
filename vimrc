@@ -1,15 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=$VIM_HOME/bundle/vundle/
-"set rtp+=$VIM_HOME/bundle/powerline/powerline/bindings/vim
-call vundle#rc("$VIM_HOME/bundle/")
-
-
-" let Vundle manage Vundle - required! 
-Bundle 'gmarik/vundle'
-
-
 function! SafeLoad(sourceFile)
   let toSource=$VIM_HOME . '/' . a:sourceFile
   if filereadable(toSource)
@@ -17,8 +8,17 @@ function! SafeLoad(sourceFile)
   endif
 endfunction
 
+set rtp+=$VIM_HOME/bundle/Vundle.vim/
+call vundle#begin("$VIM_HOME/bundle/")
+
+" let Vundle manage Vundle - required!
+Plugin 'gmarik/Vundle.vim'
+
 call SafeLoad("vimrc.before")
 call SafeLoad("vimrc.bundles")
+" required
+call vundle#end()
+
 call SafeLoad("vimrc.navigation")
 
 call SafeLoad("vimrc.visual")

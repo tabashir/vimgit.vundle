@@ -44,16 +44,18 @@ set visualbell
 set mouse +=a
 
 "Colours
-set background=dark
+" set background=dark
+let g:solarized_termcolors=256
 " let g:solarized_termcolors=16
 " let g:solarized_visibility = "high"
 " let g:solarized_contrast = "high"
 set t_Co=256
-" colorscheme solarized
+colorscheme solarized
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-" let g:airline_theme='base16'
+" let g:airline_section_c = ''
+"let g:airline_theme='base16'
 let g:airline_theme='lucius'
 
 "if !exists('g:airline_symbols')
@@ -64,6 +66,10 @@ let g:airline_theme='lucius'
 "highlighting
 hi CursorLine term=bold cterm=bold gui=bold
 hi Error term=underline cterm=underline ctermfg=5 gui=underline
+
+"for indent and tab guides
+hi IndentGuidesOdd ctermbg=lightgrey
+hi IndentGuidesEven ctermbg=darkgrey
 
 " Syntastic
 let g:syntastic_coffee_lint_options = " -f ~/.vim/coffeelint.json "
