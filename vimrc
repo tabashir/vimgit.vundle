@@ -2,7 +2,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 function! SafeLoad(sourceFile)
-  let toSource="~/.vim/" . a:sourceFile
+  let toSource=a:sourceFile
   if filereadable(toSource)
       silent! execute 'source '.toSource
   endif
@@ -10,7 +10,6 @@ endfunction
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-"call vundle#begin()
 
 " let Vundle manage Vundle - required!
 Plugin 'VundleVim/Vundle.vim'
