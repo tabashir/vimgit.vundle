@@ -2,14 +2,14 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 function! SafeLoad(sourceFile)
-  let toSource=$VIM_HOME . '/' . a:sourceFile
+  let toSource="~/.vim/" . a:sourceFile
   if filereadable(toSource)
       silent! execute 'source '.toSource
   endif
 endfunction
 
-set rtp+=$VIM_HOME/bundle/Vundle.vim/
-call vundle#begin("$VIM_HOME/bundle/")
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 "call vundle#begin()
 
 " let Vundle manage Vundle - required!

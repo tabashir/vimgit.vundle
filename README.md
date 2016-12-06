@@ -1,16 +1,16 @@
 #Installation
 
-Need to set/export VIM_HOME to this folder
+Clone/link this folder to ~/.vim
 
-			export VIM_HOME=$(pwd)
+			ln -s $(pwd) ~/.vim
 
 Link ~/.vimrc to this vimrc
 
-			ln -s $VIM_HOME/vimrc ~/.vimrc
+			ln -s $(pwd)/vimrc ~/.vimrc
 
 Get Vundle
 
-			git clone https://github.com/VundleVim/Vundle.vim.git $VIM_HOME/bundle/Vundle.vim
+			git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Update plugins
 
