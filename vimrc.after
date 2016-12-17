@@ -1,2 +1,1 @@
-"execute AirlineTheme dark
-"execute AirlineTheme lucius
+" let g:airline_theme='dark'
