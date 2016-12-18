@@ -17,3 +17,7 @@ function! ChangePaste(type, ...)
 endfunction
 
 set suffixesadd+=.js
+
+
+let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'undo', 'line', 'changes', 'mixed', 'bookmarkdir', 'cmdline', 'menu' ]
+

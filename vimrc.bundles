@@ -7,6 +7,13 @@
 "
 " see :h vundle for more details or wiki for FAQ
 
+
+" General Vim Functions
+Plugin 'https://github.com/vim-scripts/genutils.git'
+Plugin 'https://github.com/vim-scripts/multvals.vim.git'
+Plugin 'https://github.com/xolox/vim-misc.git'
+" Plugin 'https://github.com/vim-scripts/L9.git'
+
 " Visual
 Plugin 'https://github.com/vim-airline/vim-airline.git'
 Plugin 'https://github.com/vim-airline/vim-airline-themes.git' 
@@ -19,7 +26,10 @@ Plugin 'https://github.com/vim-scripts/IndexedSearch.git'
 " Plugin 'https://github.com/vim-scripts/errormarker.vim.git'
 
 " Navigation
-Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git' 
+Plugin 'https://github.com/xolox/vim-easytags.git'
+Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plugin 'https://github.com/sgur/ctrlp-extensions.vim'
+Plugin 'https://github.com/ivalkeen/vim-ctrlp-tjump'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/vim-scripts/VimExplorer.git'
 Plugin 'https://github.com/vim-scripts/DirDiff.vim.git'
@@ -27,7 +37,6 @@ Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/Lokaltog/vim-easymotion.git'
 Plugin 'https://github.com/rking/ag.vim.git'
 " Plugin 'https://github.com/vim-scripts/arpeggio.git'
-" Plugin 'https://github.com/xolox/vim-easytags.git'
 " Plugin 'https://github.com/vim-scripts/FuzzyFinder'
 
 " Buffers / Session
@@ -38,10 +47,6 @@ Plugin 'https://github.com/vim-scripts/bufkill.vim.git'
 Plugin 'https://github.com/vim-scripts/Session-manager.git'
 " Plugin 'https://github.com/vim-scripts/buftabs.git'
 
-" Utility
-" Plugin 'https://github.com/vim-scripts/L9.git'
-Plugin 'https://github.com/vim-scripts/genutils.git'
-Plugin 'https://github.com/vim-scripts/multvals.vim.git'
 
 " Helpers
 " Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
