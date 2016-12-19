@@ -23,7 +23,8 @@ set ignorecase smartcase
 set scrolloff=5
 set autoread
 set autoindent
-set noexpandtab
+" set noexpandtab
+set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
