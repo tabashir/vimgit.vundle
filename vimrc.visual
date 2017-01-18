@@ -51,7 +51,7 @@ colorscheme solarized
 "let g:solarized_termcolors=16
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
-"set t_Co=256
+set t_Co=256
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -63,6 +63,8 @@ let g:airline_theme='dark'
 "  let g:airline_symbols = {}
 "endif
 "let g:airline_symbols.space = "\ua0"
+
+let g:powerline_pycmd = "py3"
 
 "highlighting
 hi CursorLine term=bold cterm=bold gui=bold
