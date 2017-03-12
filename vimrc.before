@@ -1,1 +1,3 @@
 echo "before"
+
+set encoding=utf-8

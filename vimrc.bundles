@@ -36,6 +36,7 @@ Plugin 'https://github.com/vim-scripts/DirDiff.vim.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/Lokaltog/vim-easymotion.git'
 Plugin 'https://github.com/rking/ag.vim.git'
+Plugin 'https://github.com/Shougo/unite.vim'
 " Plugin 'https://github.com/vim-scripts/arpeggio.git'
 " Plugin 'https://github.com/vim-scripts/FuzzyFinder'
 
@@ -91,6 +92,9 @@ Plugin 'https://github.com/ecomba/vim-ruby-refactoring.git'
 Plugin 'https://github.com/skalnik/vim-vroom.git'
 " Plugin 'https://github.com/janx/vim-rubytest'
 Plugin 'https://github.com/astashov/vim-ruby-debugger.git'
+
+" Python
+Plugin 'vim-scripts/indentpython.vim'
 
 " SCM
 Plugin 'https://github.com/tpope/vim-git.git'

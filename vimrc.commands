@@ -8,6 +8,13 @@ command! SyntaxPerl set syntax=perl<CR>
 command! SyntaxPython set syntax=python<CR>
 command! SyntaxRuby set syntax=ruby<CR>
 
+" HTML/JS/CSS Setup
+au BufNewFile,BufRead *.js,*.html,*.css:
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
+
 " Ruby Setup
 au BufEnter,BufNewFile,BufReadPost *.rb set syntax=ruby
 "let g:rubytest_in_quickfix = 1 
@@ -17,9 +24,30 @@ command! SetRubyComment :call TCommentDefineType("ruby", "#%s")
 let g:rails_default_file='config/database.yml'
 
 " Python Setup
-autocmd BufRead,BufNewFile *.py syntax on
-autocmd BufRead,BufNewFile *.py set ai
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+autocmd BufRead,BufNewFile *.py,*.pyw syntax on
+autocmd BufRead,BufNewFile *.py,*.pyw set ai
+" autocmd BufRead *.p,*.pywy set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+highlight BadWhitespace ctermbg=red guibg=darkred
+autocmd BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufNewFile,BufRead *.py:
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+
 
 " PHP Setup
 " run file with PHP CLI (F5)
