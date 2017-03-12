@@ -17,3 +17,9 @@ Update plugins
 			vim +PluginInstall +qall
 
 Enjoy!
+
+Additional Packages:
+flake or pylint for Python Syntastic
+
+For YouCompleteMe
+nodejs-tern for javascript completions

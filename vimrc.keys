@@ -4,6 +4,28 @@
 noremap [1;3C :BufSurfForward<CR>
 noremap [1;3D :BufSurfBack<CR>
 
+" quick write
+nnoremap <Leader>w :w<CR>
+noremap! ZQ WQ
+
+"This allows for change paste motion cp{motion}
+nmap <silent> cp :set opfunc=ChangePaste<CR>g@
+
+" system clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" buffer copy/paste
+vmap <F7> "+ygv"zy`>
+vmap <S-F7> "+p
+nmap <S-F7> "+p
+imap <S-F7> <ESC>"+p
+
+
 " allow arrow keys with modifiers in tmux/screen
 if &term =~ '^screen'
     " tmux will send xterm-style keys when its xterm-keys option is on
@@ -55,11 +77,6 @@ noremap! <F5> <ESC><F5>
 noremap <S-F5> :wall \|:!mocha %<CR>
 noremap! <S-F5> <ESC><S-F5>
 
-" buffer copy/paste
-vmap <F7> "+ygv"zy`>
-vmap <S-F7> "+p
-nmap <S-F7> "+p
-imap <S-F7> <ESC>"+p
 
 noremap <silent> <F9> :TComment<CR> 
 noremap! <silent> <F9> <ESC><F9>
@@ -88,31 +105,29 @@ noremap N Nzz
 
 
 " Plugin Specific
-let g:SuperTabMappingForward = '<c-space>'
-let g:SuperTabMappingBackward = '<s-c-space>'
-let g:SuperTabMappingTabLiteral = '<tab>'
-let g:SuperTabDefaultCompletionType = "context"
+" let g:SuperTabMappingForward = '<c-space>'
+" let g:SuperTabMappingBackward = '<s-c-space>'
+" let g:SuperTabMappingTabLiteral = '<tab>'
+" let g:SuperTabDefaultCompletionType = "context"
 
 let g:tcommentMapLeader1=''
 let g:tcommentMapLeader2=''
 
-noremap! ZQ WQ
+" Open file
+map <leader>o <esc>:CtrlP<CR>
+map <leader>b <esc>:CtrlPMRUFiles<CR>
+map <leader>B <esc>:CtrlPBuffer<CR>
+" let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
-"This allows for change paste motion cp{motion}
-nmap <silent> cp :set opfunc=ChangePaste<CR>g@
-
-let g:ctrlp_map = '<c-f>'
-
-noremap <c-b> :CtrlPBuffer<CR>
-"noremap <c-p> :CtrlPMRUFiles<CR>
-"
-
+" expand region plugin
+" v selects char, vv word, vvv paragraph
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
 map <Leader>k <Plug>RubyTestRun
 map <Leader>kk <Plug>RubyFileRun
 map <Leader>kj <Plug>RubyLastTestRun
-
-let g:ctrlp_map = '<c-p>'
 
 if executable('ag')
   " Use Ag over Grep

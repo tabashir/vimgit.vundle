@@ -36,7 +36,8 @@ Plugin 'https://github.com/vim-scripts/DirDiff.vim.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/Lokaltog/vim-easymotion.git'
 Plugin 'https://github.com/rking/ag.vim.git'
-Plugin 'https://github.com/Shougo/unite.vim'
+Plugin 'https://github.com/terryma/vim-expand-region'
+" Plugin 'https://github.com/Shougo/unite.vim'
 " Plugin 'https://github.com/vim-scripts/arpeggio.git'
 " Plugin 'https://github.com/vim-scripts/FuzzyFinder'
 
@@ -50,7 +51,9 @@ Plugin 'https://github.com/vim-scripts/Session-manager.git'
 
 
 " Helpers
-" Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
+Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
+" Plugin 'https://github.com/Shougo/neocomplete.vim'
+Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 " Plugin 'https://github.com/sjl/gundo.vim.git'
 Plugin 'https://github.com/mbbill/undotree.git'
 Plugin 'https://github.com/AndrewRadev/splitjoin.vim.git'
@@ -64,7 +67,7 @@ Plugin 'https://github.com/ervandew/supertab.git'
 " Formatting / Syntax
 Plugin 'https://github.com/Raimondi/delimitMate.git'
 Plugin 'https://github.com/bronson/vim-trailing-whitespace.git'
-Plugin 'https://github.com/scrooloose/syntastic.git'
+Plugin 'https://github.com/vim-syntastic/syntastic.git'
 Plugin 'https://github.com/godlygeek/tabular.git'
 Plugin 'https://github.com/vim-scripts/tComment.git'
 
@@ -95,6 +98,7 @@ Plugin 'https://github.com/astashov/vim-ruby-debugger.git'
 
 " Python
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'https://github.com/jmcantrell/vim-virtualenv.git'
 
 " SCM
 Plugin 'https://github.com/tpope/vim-git.git'

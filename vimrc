@@ -1,5 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
+let mapleader = "\<space>"
 
 function! SafeLoad(sourceFile)
   let toSource=$HOME.'/.vim/'.a:sourceFile
