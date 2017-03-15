@@ -80,3 +80,7 @@ let g:syntastic_auto_jump=0
 
 " make * register use system clipboard
 set clipboard=unnamedplus
+
+" copy buffer to clipboard
+command! -range=% CopyToClipboard :%:w !xclip -i -sel c<CR>
+
