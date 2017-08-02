@@ -84,3 +84,14 @@ set clipboard=unnamedplus
 " copy buffer to clipboard
 command! -range=% CopyToClipboard :%:w !xclip -i -sel c<CR>
 
+func Backspace()
+ 	if col('.') == 1
+   	if line('.')  != 1
+			return "\<ESC>kA\<Del>"
+		else
+			return ""
+		endif
+	else
+		return "\<Left>\<Del>"
+	endif
+endfunc

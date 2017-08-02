@@ -14,6 +14,9 @@ nmap <silent> cp :set opfunc=ChangePaste<CR>g@
 " set paste
 nmap <leader>pp :set paste<cr>
 
+" map backspace for SCO and Synergy compat
+inoremap <BS> <c-r>=Backspace()<CR>
+
 " system clipboard
 vmap <Leader>y "+y
 vmap <Leader>d "+d
@@ -139,3 +142,4 @@ if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+
