@@ -30,17 +30,17 @@ let g:rails_default_file='config/database.yml'
 autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp set filetype=python
 autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp syntax on
 autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp set ai
-" autocmd BufRead *.p,*.pywy set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-highlight BadWhitespace ctermbg=red guibg=darkred
+autocmd BufRead *.p,*.pywy set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+highlight BadWhitespace ctermbg=red guibg=darkred
 au BufNewFile,BufRead *.py:
+    \ set expandtab |
     \ set tabstop=4 |
-    \ set softtabstop=4 |
     \ set shiftwidth=4 |
     \ set textwidth=79 |
-    \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
+    " \ set softtabstop=4 |
 
 let python_highlight_all=1
 

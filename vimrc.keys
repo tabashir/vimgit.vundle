@@ -145,3 +145,7 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+noremap <F7> za
+noremap! <F7> <ESC>za
+"noremap <S-F6> zA
+"noremap! <S-F6> <ESC>zA
