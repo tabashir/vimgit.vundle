@@ -1,6 +1,8 @@
 " KEY MAPPING
 
 " buffer navigation (alt-left, alt-right)
+"noremap [1;3C :bnext<CR>
+"noremap [1;3D :bprev<CR>
 noremap [1;3C :BufSurfForward<CR>
 noremap [1;3D :BufSurfBack<CR>
 
@@ -68,7 +70,7 @@ noremap! <F2> <ESC><F2>
 noremap <silent> <F3> :NERDTreeToggle<CR>
 noremap! <silent> <F3> <ESC><F3>
 
-noremap <silent> <F4> :Tlist <CR>
+noremap <silent> <F4> :NERDTreeFind<CR>
 noremap! <silent> <F4> <ESC><F4>
 
 noremap <S-Tab> <C-W><C-W>

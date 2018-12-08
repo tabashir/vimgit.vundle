@@ -100,8 +100,10 @@ Plugin 'https://github.com/astashov/vim-ruby-debugger.git'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'https://github.com/jmcantrell/vim-virtualenv.git'
 
-Groovy
-Plugin 'https://github.com/vim-scripts/groovy.vim'
+"Groovy
+Plugin 'vim-scripts/groovy.vim'
+Plugin 'https://github.com/vim-scripts/groovyindent'
+
 
 " SCM
 Plugin 'https://github.com/tpope/vim-git.git'

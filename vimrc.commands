@@ -14,6 +14,9 @@ au BufNewFile,BufRead *.js,*.html,*.css:
     \ set softtabstop=2 |
     \ set shiftwidth=2 
 
+"Easy Typing Aliases
+command! NTF NERDTreeFind
+command! AG Ag
 
 " Ruby Setup
 au BufEnter,BufNewFile,BufReadPost *.rb set syntax=ruby
@@ -52,6 +55,15 @@ let python_highlight_all=1
 "   execfile(activate_this, dict(__file__=activate_this))
 " EOF
 
+" YAML Setup
+au BufNewFile,BufRead *.yml:
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
 
 " PHP Setup
 " run file with PHP CLI (F5)
@@ -95,3 +107,6 @@ func Backspace()
 		return "\<Left>\<Del>"
 	endif
 endfunc
+
+command! NTF ::NERDTreeFind
+command! Nt ::NERDTreeFind
