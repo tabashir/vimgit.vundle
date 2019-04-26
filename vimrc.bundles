@@ -51,7 +51,7 @@ Plugin 'https://github.com/vim-scripts/Session-manager.git'
 
 
 " Helpers
-" Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
+Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
 " Plugin 'https://github.com/Shougo/neocomplete.vim'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 " Plugin 'https://github.com/sjl/gundo.vim.git'
@@ -104,6 +104,8 @@ Plugin 'https://github.com/jmcantrell/vim-virtualenv.git'
 Plugin 'vim-scripts/groovy.vim'
 Plugin 'https://github.com/vim-scripts/groovyindent'
 
+" Database
+"Plugin 'https://github.com/cosminadrianpopescu/vim-sql-workbench'
 
 " SCM
 Plugin 'https://github.com/tpope/vim-git.git'
