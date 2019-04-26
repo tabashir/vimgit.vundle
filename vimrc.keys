@@ -6,6 +6,9 @@
 noremap [1;3C :BufSurfForward<CR>
 noremap [1;3D :BufSurfBack<CR>
 
+"YankRing
+nnoremap <silent> <F10> :YRShow<CR>
+
 " quick write
 nnoremap <Leader>w :w<CR>
 noremap! ZQ WQ
@@ -91,9 +94,6 @@ noremap! <silent> <F9> <ESC><F9>
 
 noremap <silent> <C-F9> :TCommentBlock<CR> 
 noremap! <silent> <C-F9> <ESC><C-F9>
-
-noremap <silent> <F11> :TlistToggle<CR>
-noremap! <silent> <F11> <ESC><F11>
 
 "noremap gt :tag <C-R><C-W><CR>
 noremap gt :tj <C-R><C-W><CR>
