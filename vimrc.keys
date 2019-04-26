@@ -7,7 +7,7 @@ noremap [1;3C :BufSurfForward<CR>
 noremap [1;3D :BufSurfBack<CR>
 
 "YankRing
-nnoremap <silent> <F10> :YRShow<CR>
+nnoremap <silent> <F10> ::CtrlPYankring<CR>
 
 " quick write
 nnoremap <Leader>w :w<CR>
