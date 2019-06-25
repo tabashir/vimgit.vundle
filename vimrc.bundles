@@ -15,9 +15,9 @@ Plugin 'https://github.com/xolox/vim-misc.git'
 " Plugin 'https://github.com/vim-scripts/L9.git'
 
 " Visual
-Plugin 'https://github.com/rbong/vim-crystalline'
-" Plugin 'https://github.com/vim-airline/vim-airline.git'
-" Plugin 'https://github.com/vim-airline/vim-airline-themes.git' 
+" Plugin 'https://github.com/rbong/vim-crystalline'
+Plugin 'https://github.com/vim-airline/vim-airline.git'
+Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
 Plugin 'https://github.com/tomtom/quickfixsigns_vim.git'
 "Plugin 'https://github.com/vim-scripts/highlight.vim.git'
 Plugin 'https://github.com/nathanaelkane/vim-indent-guides.git'
