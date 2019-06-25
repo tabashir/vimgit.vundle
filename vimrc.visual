@@ -11,7 +11,7 @@ set wrap  " Line wrapping
 set hlsearch  "search highlight
 set cursorline
 
-" Formatting 
+" Formatting
 set ts=2  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
 set shiftwidth=2  " Tabs under smart indent
@@ -41,7 +41,7 @@ set laststatus=2  " Always show status line.
 set noerrorbells  " No noise.
 set visualbell
 
-" Mouse selection 
+" Mouse selection
 set mouse +=a
 
 "Colours
@@ -53,10 +53,11 @@ colorscheme solarized
 "let g:solarized_contrast = "high"
 set t_Co=256
 
+let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 " let g:airline_section_c = ''
-let g:airline_theme='jellybeans'
 
 "if !exists('g:airline_symbols')
 "  let g:airline_symbols = {}
