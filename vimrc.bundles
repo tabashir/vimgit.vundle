@@ -71,6 +71,7 @@ Plugin 'https://github.com/bronson/vim-trailing-whitespace.git'
 Plugin 'https://github.com/vim-syntastic/syntastic.git'
 Plugin 'https://github.com/godlygeek/tabular.git'
 Plugin 'https://github.com/vim-scripts/tComment.git'
+Plugin 'https://github.com/vimtaku/hl_matchit.vim.git'
 
 " XML/HTML
 Plugin 'https://github.com/othree/xml.vim.git'

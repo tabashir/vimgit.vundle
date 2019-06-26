@@ -11,10 +11,15 @@ set wrap  " Line wrapping
 set hlsearch  "search highlight
 set cursorline
 
-" Formatting
-set ts=2  " Tabs are 2 spaces
+" Formatting 
+set ts=3  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
-set shiftwidth=2  " Tabs under smart indent
+set tabstop=3
+set softtabstop=3
+set shiftwidth=3  " Tabs under smart indent
+" set noexpandtab
+set expandtab
+set textwidth=0
 set incsearch
 set cinoptions=:0,p0,t0
 set cinwords=if,else,while,do,for,switch,case
@@ -23,12 +28,6 @@ set ignorecase smartcase
 set scrolloff=5
 set autoread
 set autoindent
-" set noexpandtab
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set textwidth=0
 
 set showmatch  " Show matching brackets.
 set mat=5  " Bracket blinking.
