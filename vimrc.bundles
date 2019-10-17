@@ -27,7 +27,7 @@ Plugin 'https://github.com/vim-scripts/IndexedSearch.git'
 " Plugin 'https://github.com/vim-scripts/errormarker.vim.git'
 
 " Navigation
-Plugin 'https://github.com/xolox/vim-easytags.git'
+Plugin 'https://github.com/tabashir/vim-easytags'
 Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plugin 'https://github.com/sgur/ctrlp-extensions.vim'
 Plugin 'https://github.com/ivalkeen/vim-ctrlp-tjump'
