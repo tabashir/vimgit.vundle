@@ -11,12 +11,11 @@ set wrap  " Line wrapping
 set hlsearch  "search highlight
 set cursorline
 
-" Formatting 
-set ts=3  " Tabs are 2 spaces
+" Formatting
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2  " Tabs under smart indent
 set bs=2  " Backspace over everything in insert mode
-set tabstop=3
-set softtabstop=3
-set shiftwidth=3  " Tabs under smart indent
 " set noexpandtab
 set expandtab
 set textwidth=0

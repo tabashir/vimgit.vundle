@@ -30,9 +30,9 @@ command! SyntaxRuby set syntax=ruby<CR>
 
 " HTML/JS/CSS Setup
 au BufNewFile,BufRead *.js,*.html,*.css:
-    \ set tabstop=3 |
-    \ set softtabstop=3 |
-    \ set shiftwidth=3 
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 
 
 "Easy Typing Aliases
 command! NTF NERDTreeFind
@@ -55,12 +55,12 @@ autocmd BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufNewFile,BufRead *.py:
     \ set expandtab |
-    \ set tabstop=3 |
-    \ set shiftwidth=3 |
+    \ set tabstop=1 |
+    \ set shiftwidth=1 |
     \ set textwidth=79 |
     \ set autoindent |
-    \ set fileformat=unix
-    " \ set softtabstop=4 |
+    \ set fileformat=unix |
+    \ set softtabstop=1 |
 
 let python_highlight_all=1
 
@@ -77,9 +77,10 @@ let python_highlight_all=1
 
 " YAML Setup
 au BufNewFile,BufRead *.yml:
-    \ set tabstop=3 |
-    \ set softtabstop=3 |
-    \ set shiftwidth=3 |
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set softtabstop=1 |
+    \ set shiftwidth=1 |
     \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |
