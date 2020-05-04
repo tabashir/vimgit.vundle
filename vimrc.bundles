@@ -52,7 +52,7 @@ Plug 'https://github.com/vim-scripts/Session-manager.git'
 
 
 " Helpers
-" Plug 'https://github.com/vim-scripts/YankRing.vim.git'
+Plug 'https://github.com/vim-scripts/YankRing.vim.git'
 " Plug 'https://github.com/Shougo/neocomplete.vim'
 Plug 'https://github.com/ycm-core/YouCompleteMe.git', { 'do': './install.py' }
 " Plug 'https://github.com/sjl/gundo.vim.git'

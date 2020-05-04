@@ -149,3 +149,6 @@ noremap <F7> za
 noremap! <F7> <ESC>za
 "noremap <S-F6> zA
 "noremap! <S-F6> <ESC>zA
+"
+"
+"noremap <silent> <F10> :CtrlPYankRing<CR>
