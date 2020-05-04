@@ -1,117 +1,117 @@
 " Brief help
 "
-" :PluginList          - list configured bundles
-" :PluginInstall(!)    - install(update) bundles
-" :PluginSearch(!) foo - search(or refresh cache first) for foo
-" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PlugList          - list configured bundles
+" :PlugInstall(!)    - install(update) bundles
+" :PlugSearch(!) foo - search(or refresh cache first) for foo
+" :PlugClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
 
 
 " General Vim Functions
-Plugin 'https://github.com/vim-scripts/genutils.git'
-Plugin 'https://github.com/vim-scripts/multvals.vim.git'
-Plugin 'https://github.com/xolox/vim-misc.git'
-" Plugin 'https://github.com/vim-scripts/L9.git'
+Plug 'https://github.com/vim-scripts/genutils.git'
+Plug 'https://github.com/vim-scripts/multvals.vim.git'
+Plug 'https://github.com/xolox/vim-misc.git'
+" Plug 'https://github.com/vim-scripts/L9.git'
 
 " Visual
-" Plugin 'https://github.com/rbong/vim-crystalline'
-Plugin 'https://github.com/vim-airline/vim-airline.git'
-Plugin 'https://github.com/vim-airline/vim-airline-themes.git'
-Plugin 'https://github.com/tomtom/quickfixsigns_vim.git'
-"Plugin 'https://github.com/vim-scripts/highlight.vim.git'
-Plugin 'https://github.com/nathanaelkane/vim-indent-guides.git'
-Plugin 'https://github.com/zhaocai/GoldenView.Vim.git'
-Plugin 'https://github.com/vim-scripts/IndexedSearch.git'
-" Plugin 'https://github.com/vim-scripts/ZoomWin.git'
-" Plugin 'https://github.com/vim-scripts/errormarker.vim.git'
+" Plug 'https://github.com/rbong/vim-crystalline'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/tomtom/quickfixsigns_vim.git'
+"Plug 'https://github.com/vim-scripts/highlight.vim.git'
+Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
+Plug 'https://github.com/zhaocai/GoldenView.Vim.git'
+Plug 'https://github.com/vim-scripts/IndexedSearch.git'
+" Plug 'https://github.com/vim-scripts/ZoomWin.git'
+" Plug 'https://github.com/vim-scripts/errormarker.vim.git'
 
 " Navigation
-Plugin 'https://github.com/tabashir/vim-easytags'
-Plugin 'https://github.com/ctrlpvim/ctrlp.vim.git'
-Plugin 'https://github.com/sgur/ctrlp-extensions.vim'
-Plugin 'https://github.com/ivalkeen/vim-ctrlp-tjump'
-Plugin 'https://github.com/scrooloose/nerdtree.git'
-Plugin 'https://github.com/vim-scripts/VimExplorer.git'
-Plugin 'https://github.com/vim-scripts/DirDiff.vim.git'
-Plugin 'https://github.com/majutsushi/tagbar.git'
-Plugin 'https://github.com/Lokaltog/vim-easymotion.git'
-Plugin 'https://github.com/rking/ag.vim.git'
-Plugin 'https://github.com/terryma/vim-expand-region'
-" Plugin 'https://github.com/Shougo/unite.vim'
-" Plugin 'https://github.com/vim-scripts/arpeggio.git'
-" Plugin 'https://github.com/vim-scripts/FuzzyFinder'
+Plug 'https://github.com/tabashir/vim-easytags'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/sgur/ctrlp-extensions.vim'
+Plug 'https://github.com/ivalkeen/vim-ctrlp-tjump'
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/vim-scripts/VimExplorer.git'
+Plug 'https://github.com/vim-scripts/DirDiff.vim.git'
+Plug 'https://github.com/majutsushi/tagbar.git'
+Plug 'https://github.com/Lokaltog/vim-easymotion.git'
+Plug 'https://github.com/rking/ag.vim.git'
+Plug 'https://github.com/terryma/vim-expand-region'
+" Plug 'https://github.com/Shougo/unite.vim'
+" Plug 'https://github.com/vim-scripts/arpeggio.git'
+" Plug 'https://github.com/vim-scripts/FuzzyFinder'
 
 " Buffers / Session
-Plugin 'https://github.com/vim-scripts/Rename.git'
-Plugin 'https://github.com/ton/vim-bufsurf.git'
-Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
-Plugin 'https://github.com/vim-scripts/bufkill.vim.git'
-Plugin 'https://github.com/vim-scripts/Session-manager.git'
-" Plugin 'https://github.com/vim-scripts/buftabs.git'
+Plug 'https://github.com/vim-scripts/Rename.git'
+Plug 'https://github.com/ton/vim-bufsurf.git'
+Plug 'https://github.com/terryma/vim-multiple-cursors.git'
+Plug 'https://github.com/vim-scripts/bufkill.vim.git'
+Plug 'https://github.com/vim-scripts/Session-manager.git'
+" Plug 'https://github.com/vim-scripts/buftabs.git'
 
 
 " Helpers
-" Plugin 'https://github.com/vim-scripts/YankRing.vim.git'
-" Plugin 'https://github.com/Shougo/neocomplete.vim'
-Plugin 'https://github.com/Valloric/YouCompleteMe.git'
-" Plugin 'https://github.com/sjl/gundo.vim.git'
-Plugin 'https://github.com/mbbill/undotree.git'
-Plugin 'https://github.com/AndrewRadev/splitjoin.vim.git'
-Plugin 'https://github.com/tpope/vim-repeat.git'
-Plugin 'https://github.com/tpope/vim-surround.git'
-" Plugin 'https://github.com/garbas/vim-snipmate.git'
-" Plugin 'https://github.com/xuhdev/SingleCompile.git'
-Plugin 'https://github.com/ervandew/supertab.git'
-" Plugin 'https://github.com/tpope/vim-abolish.git'
+" Plug 'https://github.com/vim-scripts/YankRing.vim.git'
+" Plug 'https://github.com/Shougo/neocomplete.vim'
+Plug 'https://github.com/ycm-core/YouCompleteMe.git', { 'do': './install.py' }
+" Plug 'https://github.com/sjl/gundo.vim.git'
+Plug 'https://github.com/mbbill/undotree.git'
+Plug 'https://github.com/AndrewRadev/splitjoin.vim.git'
+Plug 'https://github.com/tpope/vim-repeat.git'
+Plug 'https://github.com/tpope/vim-surround.git'
+" Plug 'https://github.com/garbas/vim-snipmate.git'
+" Plug 'https://github.com/xuhdev/SingleCompile.git'
+Plug 'https://github.com/ervandew/supertab.git'
+" Plug 'https://github.com/tpope/vim-abolish.git'
 
 " Formatting / Syntax
-Plugin 'https://github.com/Raimondi/delimitMate.git'
-Plugin 'https://github.com/bronson/vim-trailing-whitespace.git'
-Plugin 'https://github.com/vim-syntastic/syntastic.git'
-Plugin 'https://github.com/godlygeek/tabular.git'
-Plugin 'https://github.com/vim-scripts/tComment.git'
-Plugin 'https://github.com/vimtaku/hl_matchit.vim.git'
+Plug 'https://github.com/Raimondi/delimitMate.git'
+Plug 'https://github.com/bronson/vim-trailing-whitespace.git'
+Plug 'https://github.com/vim-syntastic/syntastic.git'
+Plug 'https://github.com/godlygeek/tabular.git'
+Plug 'https://github.com/vim-scripts/tComment.git'
+Plug 'https://github.com/vimtaku/hl_matchit.vim.git'
 
 " XML/HTML
-Plugin 'https://github.com/othree/xml.vim.git'
-Plugin 'https://github.com/vim-scripts/XmlPretty.git'
-Plugin 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'https://github.com/othree/xml.vim.git'
+" Plug 'https://github.com/vim-scripts/XmlPretty.git'
+Plug 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Javascript
-" Plugin 'https://github.com/hallettj/jslint.vim.git' - disabled because it
+" Plug 'https://github.com/hallettj/jslint.vim.git' - disabled because it
 " uses quickfix not locationlist which messes up grep results
-Plugin 'https://github.com/kchmck/vim-coffee-script.git'
-Plugin 'https://github.com/leshill/vim-json.git'
-Plugin 'https://github.com/maksimr/vim-jsbeautify.git'
-Plugin 'einars/js-beautify'
-" Plugin 'https://github.com/vim-scripts/jQuery.git'
-" Plugin 'https://github.com/pangloss/vim-javascript.git'
-" Plugin 'git://github.com/tpope/vim-jdaddy.git'
+Plug 'https://github.com/kchmck/vim-coffee-script.git'
+Plug 'https://github.com/leshill/vim-json.git'
+Plug 'https://github.com/maksimr/vim-jsbeautify.git'
+Plug 'einars/js-beautify'
+" Plug 'https://github.com/vim-scripts/jQuery.git'
+" Plug 'https://github.com/pangloss/vim-javascript.git'
+" Plug 'git://github.com/tpope/vim-jdaddy.git'
 
 " Ruby
-Plugin 'https://github.com/vim-ruby/vim-ruby.git'
-Plugin 'https://github.com/tpope/vim-rails.git'
-Plugin 'https://github.com/depuracao/vim-rdoc.git'
-Plugin 'https://github.com/ecomba/vim-ruby-refactoring.git'
-Plugin 'https://github.com/skalnik/vim-vroom.git'
-" Plugin 'https://github.com/janx/vim-rubytest'
-Plugin 'https://github.com/astashov/vim-ruby-debugger.git'
+Plug 'https://github.com/vim-ruby/vim-ruby.git'
+Plug 'https://github.com/tpope/vim-rails.git'
+Plug 'https://github.com/depuracao/vim-rdoc.git'
+Plug 'https://github.com/ecomba/vim-ruby-refactoring.git'
+Plug 'https://github.com/skalnik/vim-vroom.git'
+" Plug 'https://github.com/janx/vim-rubytest'
+Plug 'https://github.com/astashov/vim-ruby-debugger.git'
 
 " Python
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'https://github.com/jmcantrell/vim-virtualenv.git'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'https://github.com/jmcantrell/vim-virtualenv.git'
 
 "Groovy
-Plugin 'vim-scripts/groovy.vim'
-Plugin 'https://github.com/vim-scripts/groovyindent'
+Plug 'vim-scripts/groovy.vim'
+Plug 'https://github.com/vim-scripts/groovyindent'
 
 " Database
-"Plugin 'https://github.com/cosminadrianpopescu/vim-sql-workbench'
+"Plug 'https://github.com/cosminadrianpopescu/vim-sql-workbench'
 
 " SCM
-Plugin 'https://github.com/tpope/vim-git.git'
-Plugin 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/tpope/vim-git.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
 
 
 

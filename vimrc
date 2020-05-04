@@ -1,5 +1,4 @@
 set nocompatible               " be iMproved
-filetype off                   " required!
 let mapleader = "\<space>"
 
 function! SafeLoad(sourceFile)
@@ -9,24 +8,21 @@ function! SafeLoad(sourceFile)
   endif
 endfunction
 
-set rtp+=$HOME/.vim/bundle/Vundle.vim/
-call vundle#begin()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle - required!
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 call SafeLoad("vimrc.before")
 call SafeLoad("vimrc.bundles")
-" required
-call vundle#end()
+
+call plug#end()
 
 call SafeLoad("vimrc.navigation")
-
 call SafeLoad("vimrc.visual")
 call SafeLoad("vimrc.commands")
-
-filetype plugin indent on  " required!
-syntax on
-
 call SafeLoad("vimrc.keys")
 call SafeLoad("vimrc.after")
