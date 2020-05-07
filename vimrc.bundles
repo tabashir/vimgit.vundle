@@ -22,9 +22,7 @@ Plug 'https://github.com/tomtom/quickfixsigns_vim.git'
 "Plug 'https://github.com/vim-scripts/highlight.vim.git'
 Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Plug 'https://github.com/zhaocai/GoldenView.Vim.git'
-Plug 'https://github.com/vim-scripts/IndexedSearch.git'
 " Plug 'https://github.com/vim-scripts/ZoomWin.git'
-" Plug 'https://github.com/vim-scripts/errormarker.vim.git'
 
 " Navigation
 Plug 'https://github.com/tabashir/vim-easytags'
@@ -47,7 +45,7 @@ Plug 'https://github.com/vim-scripts/Rename.git'
 Plug 'https://github.com/ton/vim-bufsurf.git'
 Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 Plug 'https://github.com/vim-scripts/bufkill.vim.git'
-Plug 'https://github.com/vim-scripts/Session-manager.git'
+" Plug 'https://github.com/vim-scripts/Session-manager.git'
 " Plug 'https://github.com/vim-scripts/buftabs.git'
 
 
@@ -62,8 +60,13 @@ Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 " Plug 'https://github.com/garbas/vim-snipmate.git'
 " Plug 'https://github.com/xuhdev/SingleCompile.git'
-Plug 'https://github.com/ervandew/supertab.git'
 " Plug 'https://github.com/tpope/vim-abolish.git'
+" YCM removes this need
+" Plug 'https://github.com/ervandew/supertab.git'
+" SCM
+Plug 'https://github.com/tpope/vim-git.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+
 
 " Formatting / Syntax
 Plug 'https://github.com/Raimondi/delimitMate.git'
@@ -82,12 +85,10 @@ Plug 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/'}
 " Plug 'https://github.com/hallettj/jslint.vim.git' - disabled because it
 " uses quickfix not locationlist which messes up grep results
 Plug 'https://github.com/kchmck/vim-coffee-script.git'
-Plug 'https://github.com/leshill/vim-json.git'
+" These 2 are complementary but also need js-beautify installed using pip or nodejs
 Plug 'https://github.com/maksimr/vim-jsbeautify.git'
-Plug 'einars/js-beautify'
 " Plug 'https://github.com/vim-scripts/jQuery.git'
 " Plug 'https://github.com/pangloss/vim-javascript.git'
-" Plug 'git://github.com/tpope/vim-jdaddy.git'
 
 " Ruby
 Plug 'https://github.com/vim-ruby/vim-ruby.git'
@@ -108,13 +109,3 @@ Plug 'https://github.com/vim-scripts/groovyindent'
 
 " Database
 "Plug 'https://github.com/cosminadrianpopescu/vim-sql-workbench'
-
-" SCM
-Plug 'https://github.com/tpope/vim-git.git'
-Plug 'https://github.com/tpope/vim-fugitive.git'
-
-
-
-
-
-

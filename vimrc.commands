@@ -37,6 +37,7 @@ au BufNewFile,BufRead *.js,*.html,*.css:
 "Easy Typing Aliases
 command! NTF NERDTreeFind
 command! AG Ag
+command! PPP set paste
 
 " Ruby Setup
 au BufEnter,BufNewFile,BufReadPost *.rb set syntax=ruby

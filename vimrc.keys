@@ -1,13 +1,15 @@
 " KEY MAPPING
 
 " buffer navigation (alt-left, alt-right)
-"noremap [1;3C :bnext<CR>
-"noremap [1;3D :bprev<CR>
-noremap [1;3C :BufSurfForward<CR>
-noremap [1;3D :BufSurfBack<CR>
-
-"YankRing
-nnoremap <silent> <F10> ::CtrlPYankring<CR>
+if has('nvim')
+  noremap <silent> <M-Right> :BufSurfForward<CR>
+  noremap <silent> <M-Left> :BufSurfBack<CR>
+else
+  noremap <silent> [1;3C :BufSurfForward<CR>
+  noremap <silent> [1;3D :BufSurfBack<CR>
+  "noremap [1;3C :bnext<CR>
+  "noremap [1;3D :bprev<CR>
+end
 
 " quick write
 nnoremap <Leader>w :w<CR>
@@ -15,9 +17,6 @@ noremap! ZQ WQ
 
 "This allows for change paste motion cp{motion}
 nmap <silent> cp :set opfunc=ChangePaste<CR>g@
-
-" set paste
-nmap <leader>pp :set paste<cr>
 
 " map backspace for SCO and Synergy compat
 inoremap <BS> <c-r>=Backspace()<CR>
@@ -67,14 +66,12 @@ map <CR> o<Esc>
 
 inoremap <Nul> <C-n>
 
-noremap <F2> :wall \|!ctags -R --extra=+f<CR>
+" noremap <F2> :wall \|!ctags -R --extra=+f<CR>
+noremap <F2> :wall :UpdateTags<CR>
 noremap! <F2> <ESC><F2>
 
 noremap <silent> <F3> :NERDTreeToggle<CR>
 noremap! <silent> <F3> <ESC><F3>
-
-noremap <silent> <F4> :NERDTreeFind<CR>
-noremap! <silent> <F4> <ESC><F4>
 
 noremap <S-Tab> <C-W><C-W>
 noremap! <S-Tab> <C-W><C-W>
@@ -100,10 +97,6 @@ noremap gt :tj <C-R><C-W><CR>
 
 noremap err :cope <CR> <CR> :ccl <CR>
 
-noremap <silent> ,,f <ESC>:CommandT<CR>
-noremap <silent> ,,b <ESC>:CommandTBuffer<CR>
-noremap <silent> ,,j <ESC>:CommandTJump<CR>
-
 command! ToggleWrap :set invwrap
 
 " Centre screen on current line stuff
@@ -122,11 +115,16 @@ let g:tcommentMapLeader1=''
 let g:tcommentMapLeader2=''
 
 " Open file
-map <leader>o <esc>:CtrlP<CR>
-map <leader>b <esc>:CtrlPMRUFiles<CR>
-map <leader>B <esc>:CtrlPBuffer<CR>
-" let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map = '<leader>p'
+let g:ctrlp_cmd = 'CtrlPMixed'
+map <F4> <esc>:CtrlP<CR>
+map <leader>o <esc>:CtrlPMRUFiles<CR>
+map <leader>i <esc>:CtrlPBuffer<CR>
+map <leader>u <esc>:CtrlP<CR>
+
+"YankRing
+"noremap <silent> <F10> :CtrlPYankRing<CR>
+nnoremap <silent> <F10> ::CtrlPYankring<CR>
 
 " expand region plugin
 " v selects char, vv word, vvv paragraph
@@ -147,8 +145,6 @@ endif
 
 noremap <F7> za
 noremap! <F7> <ESC>za
-"noremap <S-F6> zA
 "noremap! <S-F6> <ESC>zA
 "
-"
-"noremap <silent> <F10> :CtrlPYankRing<CR>
+
