@@ -125,6 +125,8 @@ map <leader>u <esc>:CtrlP<CR>
 "YankRing
 "noremap <silent> <F10> :CtrlPYankRing<CR>
 nnoremap <silent> <F10> ::CtrlPYankring<CR>
+let g:yankring_replace_n_pkey = 'ALT-,'
+let g:yankring_replace_n_nkey = 'ALT-.'
 
 " expand region plugin
 " v selects char, vv word, vvv paragraph
