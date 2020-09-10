@@ -71,7 +71,9 @@ noremap <F2> :wall :UpdateTags<CR>
 noremap! <F2> <ESC><F2>
 
 noremap <silent> <F3> :NERDTreeToggle<CR>
+noremap <silent> <C-F3> :NERDTreeFind<CR>
 noremap! <silent> <F3> <ESC><F3>
+noremap! <silent> <C-F3> <ESC><C-F3>
 
 noremap <S-Tab> <C-W><C-W>
 noremap! <S-Tab> <C-W><C-W>
@@ -143,6 +145,8 @@ if executable('ag')
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  let g:ag_prg="ag --vimgrep --smart-case --ignore=*min.js"
 endif
 
 noremap <F7> za

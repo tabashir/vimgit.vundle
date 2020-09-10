@@ -36,7 +36,7 @@ au BufNewFile,BufRead *.js,*.html,*.css:
 
 "Easy Typing Aliases
 command! NTF NERDTreeFind
-command! AG Ag
+command! AGG Ag
 command! PPP set paste
 
 " Ruby Setup
@@ -51,6 +51,7 @@ let g:rails_default_file='config/database.yml'
 autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp set filetype=python
 autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp syntax on
 autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp set ai
+autocmd BufRead,BufNewFile *.py,*.pyw,*.pyp setlocal cul!
 autocmd BufRead *.p,*.pywy set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 highlight BadWhitespace ctermbg=red guibg=darkred
