@@ -25,7 +25,8 @@ Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 " Plug 'https://github.com/vim-scripts/ZoomWin.git'
 
 " Navigation
-Plug 'https://github.com/tabashir/vim-easytags'
+" Plug 'https://github.com/tabashir/vim-easytags'
+Plug 'https://github.com/ludovicchabant/vim-gutentags.git'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 Plug 'https://github.com/sgur/ctrlp-extensions.vim'
 Plug 'https://github.com/ivalkeen/vim-ctrlp-tjump'
@@ -53,7 +54,8 @@ Plug 'https://github.com/vim-scripts/bufkill.vim.git'
 " Helpers
 " Plug 'https://github.com/vim-scripts/YankRing.vim.git'
 " Plug 'https://github.com/Shougo/neocomplete.vim'
-Plug 'https://github.com/ycm-core/YouCompleteMe.git', { 'do': './install.py' }
+" Plug 'https://github.com/ycm-core/YouCompleteMe.git', { 'do': './install.py' }
+Plug 'https://github.com/ackyshake/VimCompletesMe.git'
 " Plug 'https://github.com/sjl/gundo.vim.git'
 Plug 'https://github.com/mbbill/undotree.git'
 Plug 'https://github.com/AndrewRadev/splitjoin.vim.git'
