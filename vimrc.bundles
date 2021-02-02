@@ -36,6 +36,7 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'https://github.com/Lokaltog/vim-easymotion.git'
 Plug 'https://github.com/rking/ag.vim.git'
 Plug 'https://github.com/terryma/vim-expand-region'
+Plug 'https://github.com/vim-scripts/cmdalias.vim'
 " Plug 'https://github.com/Shougo/unite.vim'
 " Plug 'https://github.com/vim-scripts/arpeggio.git'
 " Plug 'https://github.com/vim-scripts/FuzzyFinder'
@@ -50,7 +51,7 @@ Plug 'https://github.com/vim-scripts/bufkill.vim.git'
 
 
 " Helpers
-Plug 'https://github.com/vim-scripts/YankRing.vim.git'
+" Plug 'https://github.com/vim-scripts/YankRing.vim.git'
 " Plug 'https://github.com/Shougo/neocomplete.vim'
 Plug 'https://github.com/ycm-core/YouCompleteMe.git', { 'do': './install.py' }
 " Plug 'https://github.com/sjl/gundo.vim.git'
