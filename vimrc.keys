@@ -154,3 +154,6 @@ noremap! <F7> <ESC>za
 "noremap! <S-F6> <ESC>zA
 "
 
+map <leader>g :Ag <cword><CR>
+
+vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
