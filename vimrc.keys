@@ -11,6 +11,11 @@ else
   "noremap [1;3D :bprev<CR>
 end
 
+" vimcompletesme
+let g:vcm_default_maps = 0
+imap <C-Space> <plug>vim_completes_me_forward
+imap <C-S-Space> <plug>vim_completes_me_backward
+
 " quick write
 nnoremap <Leader>w :w<CR>
 noremap! ZQ WQ
@@ -75,8 +80,6 @@ noremap <silent> <C-F3> :NERDTreeFind<CR>
 noremap! <silent> <F3> <ESC><F3>
 noremap! <silent> <C-F3> <ESC><C-F3>
 
-noremap <S-Tab> <C-W><C-W>
-noremap! <S-Tab> <C-W><C-W>
 
 noremap <C-F5> :wall \|:SingleCompile<CR>
 noremap! <C-F5> <ESC><C-F5>
@@ -157,3 +160,5 @@ noremap! <F7> <ESC>za
 map <leader>g :Ag <cword><CR>
 
 vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
+
+noremap <S-Tab> <C-W>W
