@@ -32,12 +32,12 @@ command! SyntaxRuby set syntax=ruby<CR>
 au BufNewFile,BufRead *.js,*.html,*.css:
     \ set tabstop=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2 
+    \ set shiftwidth=2
+command! FormatJSON %!python -m json.tool
 
 "Easy Typing Aliases
 command! NTF NERDTreeFind
 command! AGG Ag
-command! PPP set paste!
 command! PPP set paste!
 
 " Ruby Setup
