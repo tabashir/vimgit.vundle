@@ -38,6 +38,7 @@ au BufNewFile,BufRead *.js,*.html,*.css:
 command! NTF NERDTreeFind
 command! AGG Ag
 command! PPP set paste!
+command! PPP set paste!
 
 " Ruby Setup
 au BufEnter,BufNewFile,BufReadPost *.rb set syntax=ruby
