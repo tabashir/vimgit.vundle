@@ -138,9 +138,9 @@ let g:yankring_replace_n_nkey = 'ALT-.'
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
-map <Leader>k <Plug>RubyTestRun
-map <Leader>kk <Plug>RubyFileRun
-map <Leader>kj <Plug>RubyLastTestRun
+nmap <Leader>t :TestLast<CR>
+nmap <Leader>tt :TestVisit<CR>
+nmap <Leader>ttt :TestFile<CR>
 
 if executable('ag')
   " Use Ag over Grep

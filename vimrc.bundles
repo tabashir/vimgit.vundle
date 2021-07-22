@@ -103,7 +103,7 @@ Plug 'https://github.com/depuracao/vim-rdoc.git'
 Plug 'https://github.com/ecomba/vim-ruby-refactoring.git'
 Plug 'https://github.com/skalnik/vim-vroom.git'
 " Plug 'https://github.com/janx/vim-rubytest'
-Plug 'https://github.com/astashov/vim-ruby-debugger.git'
+" Plug 'https://github.com/astashov/vim-ruby-debugger.git'
 
 " Python
 Plug 'vim-scripts/indentpython.vim'
