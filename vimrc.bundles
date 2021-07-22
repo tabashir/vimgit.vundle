@@ -81,6 +81,7 @@ Plug 'https://github.com/vim-syntastic/syntastic.git'
 Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'https://github.com/vim-scripts/tComment.git'
 Plug 'https://github.com/vimtaku/hl_matchit.vim.git'
+Plug 'https://github.com/sirtaj/vim-openscad.git'
 
 " XML/HTML
 Plug 'https://github.com/othree/xml.vim.git'
