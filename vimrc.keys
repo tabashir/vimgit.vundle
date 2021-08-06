@@ -1,15 +1,11 @@
 " KEY MAPPING
 
 " buffer navigation (alt-left, alt-right)
-if has('nvim')
-  noremap <silent> <M-Right> :BufSurfForward<CR>
-  noremap <silent> <M-Left> :BufSurfBack<CR>
-else
-  noremap <silent> [1;3C :BufSurfForward<CR>
-  noremap <silent> [1;3D :BufSurfBack<CR>
-  "noremap [1;3C :bnext<CR>
-  "noremap [1;3D :bprev<CR>
-end
+" This could be a conditional but does not harm to map both keycode types
+noremap <silent> <M-Right> :BufSurfForward<CR>
+noremap <silent> <M-Left> :BufSurfBack<CR>
+noremap <silent> [1;3C :BufSurfForward<CR>
+noremap <silent> [1;3D :BufSurfBack<CR>
 
 " vimcompletesme
 let g:vcm_default_maps = 0
@@ -75,8 +71,8 @@ inoremap <Nul> <C-n>
 noremap <F2> :wall :UpdateTags<CR>
 noremap! <F2> <ESC><F2>
 
-noremap <silent> <F3> :NERDTreeToggle<CR>
-noremap <silent> <C-F3> :NERDTreeFind<CR>
+noremap <silent> <C-F3> :NERDTreeToggle<CR>
+noremap <silent> <F3> :NERDTreeFind<CR>
 noremap! <silent> <F3> <ESC><F3>
 noremap! <silent> <C-F3> <ESC><C-F3>
 
@@ -119,10 +115,12 @@ noremap N Nzz
 let g:tcommentMapLeader1=''
 let g:tcommentMapLeader2=''
 
-" Open file
+" file finder - ctrlp
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 map <F4> <esc>:CtrlP<CR>
+map <leader><leader>h <esc>:CtrlPMixed<CR>
+map <leader>h <esc>:CtrlPMixed<CR>
 map <leader>o <esc>:CtrlPMRUFiles<CR>
 map <leader>i <esc>:CtrlPBuffer<CR>
 map <leader>u <esc>:CtrlP<CR>
