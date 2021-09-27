@@ -109,6 +109,7 @@ Plug 'https://github.com/skalnik/vim-vroom.git'
 " Python
 Plug 'vim-scripts/indentpython.vim'
 Plug 'https://github.com/jmcantrell/vim-virtualenv.git'
+Plug 'https://github.com/nvie/vim-flake8.git'
 
 "Groovy
 Plug 'vim-scripts/groovy.vim'

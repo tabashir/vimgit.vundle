@@ -7,6 +7,9 @@ noremap <silent> <M-Left> :BufSurfBack<CR>
 noremap <silent> [1;3C :BufSurfForward<CR>
 noremap <silent> [1;3D :BufSurfBack<CR>
 
+noremap <leader>; :BufSurfForward<CR>
+noremap <leader>j :BufSurfBack<CR>
+
 " vimcompletesme
 let g:vcm_default_maps = 0
 imap <C-Space> <plug>vim_completes_me_forward
