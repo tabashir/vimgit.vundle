@@ -7,8 +7,8 @@ noremap <silent> <M-Left> :BufSurfBack<CR>
 noremap <silent> [1;3C :BufSurfForward<CR>
 noremap <silent> [1;3D :BufSurfBack<CR>
 
-noremap <leader>; :BufSurfForward<CR>
-noremap <leader>j :BufSurfBack<CR>
+noremap <leader>l :BufSurfForward<CR>
+noremap <leader>h :BufSurfBack<CR>
 
 " vimcompletesme
 let g:vcm_default_maps = 0
@@ -123,7 +123,7 @@ let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 map <F4> <esc>:CtrlP<CR>
 map <leader><leader>h <esc>:CtrlPMixed<CR>
-map <leader>h <esc>:CtrlPMixed<CR>
+map <leader>j <esc>:CtrlPMixed<CR>
 map <leader>o <esc>:CtrlPMRUFiles<CR>
 map <leader>i <esc>:CtrlPBuffer<CR>
 map <leader>u <esc>:CtrlP<CR>
