@@ -74,8 +74,8 @@ inoremap <Nul> <C-n>
 noremap <F2> :wall :UpdateTags<CR>
 noremap! <F2> <ESC><F2>
 
-noremap <silent> <C-F3> :NERDTreeToggle<CR>
-noremap <silent> <F3> :NERDTreeFind<CR>
+noremap <silent> <F3> :NERDTreeToggle<CR>
+noremap <silent> <C-F3> :NERDTreeFind<CR>
 noremap! <silent> <F3> <ESC><F3>
 noremap! <silent> <C-F3> <ESC><C-F3>
 
