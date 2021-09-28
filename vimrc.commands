@@ -124,6 +124,7 @@ command! WQ :mksession! project.session | qall!
 
 " not automatically jump to first error on save
 let g:syntastic_auto_jump=0
+let g:syntastic_always_populate_loc_list=1
 
 " make * register use system clipboard
 set clipboard=unnamedplus
@@ -143,7 +144,12 @@ func Backspace()
 	endif
 endfunc
 
-command! NTF ::NERDTreeFind
-command! Nt ::NERDTreeFind
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
 
-Alias AGG Ag
+command! TrimWhitespace call TrimWhitespace()
+
+command! NTF ::NERDTreeFind
