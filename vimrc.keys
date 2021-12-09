@@ -61,7 +61,7 @@ endif
 " END DISABLE ARROW KEYS
 
 " next/prev row not line
-noremap j gj 
+noremap j gj
 noremap k gk
 " insert line below with enter
 "map <CR> O<Esc>j
@@ -70,8 +70,12 @@ map <CR> o<Esc>
 
 inoremap <Nul> <C-n>
 
-" noremap <F2> :wall \|!ctags -R --extra=+f<CR>
-noremap <F2> :wall :UpdateTags<CR>
+" noremap <F2> :wall<CR>:!ctags -R --extra=+f --exclude='tmp/*'<CR>
+let g:gutentags_ctags_exclude = [
+    \ 'tmp/*',
+    \ '.idea*'
+\]
+noremap <F2> :wall!<CR>:GutentagsUpdate!<CR>
 noremap! <F2> <ESC><F2>
 
 noremap <silent> <F3> :NERDTreeToggle<CR>
@@ -90,10 +94,10 @@ noremap <S-F5> :wall \|:!mocha %<CR>
 noremap! <S-F5> <ESC><S-F5>
 
 
-noremap <silent> <F9> :TComment<CR> 
+noremap <silent> <F9> :TComment<CR>
 noremap! <silent> <F9> <ESC><F9>
 
-noremap <silent> <C-F9> :TCommentBlock<CR> 
+noremap <silent> <C-F9> :TCommentBlock<CR>
 noremap! <silent> <C-F9> <ESC><C-F9>
 
 "noremap gt :tag <C-R><C-W><CR>
@@ -140,8 +144,10 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
 nmap <Leader>t :TestLast<CR>
+nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tt :TestVisit<CR>
-nmap <Leader>ttt :TestFile<CR>
+nmap <Leader>tv :TestVisit<CR>
+nmap <Leader>tf :TestFile<CR>
 
 if executable('ag')
   " Use Ag over Grep
