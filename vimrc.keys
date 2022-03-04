@@ -78,11 +78,12 @@ let g:gutentags_ctags_exclude = [
 noremap <F2> :wall!<CR>:GutentagsUpdate!<CR>
 noremap! <F2> <ESC><F2>
 
-noremap <silent> <F3> :NERDTreeToggle<CR>
-noremap <silent> <C-F3> :NERDTreeFind<CR>
+noremap <silent> <F3> :NERDTreeToggle<CR>:TagbarToggle<CR>
 noremap! <silent> <F3> <ESC><F3>
+noremap <silent> <S-F3> :NERDTreeClose<CR>:TagbarClose<CR>:cclose<CR>
+noremap! <silent> <S-F3> <ESC><S-F3>
+noremap <silent> <C-F3> :NERDTreeFind<CR>
 noremap! <silent> <C-F3> <ESC><C-F3>
-
 
 noremap <C-F5> :wall \|:SingleCompile<CR>
 noremap! <C-F5> <ESC><C-F5>
@@ -92,7 +93,6 @@ noremap! <F5> <ESC><F5>
 
 noremap <S-F5> :wall \|:!mocha %<CR>
 noremap! <S-F5> <ESC><S-F5>
-
 
 noremap <silent> <F9> :TComment<CR>
 noremap! <silent> <F9> <ESC><F9>
