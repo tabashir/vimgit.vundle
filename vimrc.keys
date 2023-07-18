@@ -78,7 +78,9 @@ let g:gutentags_ctags_exclude = [
 noremap <F2> :wall!<CR>:GutentagsUpdate!<CR>
 noremap! <F2> <ESC><F2>
 
-noremap <silent> <F3> :NERDTreeToggle<CR>:TagbarToggle<CR>
+let g:tagbar_position = 'leftabove'
+
+noremap <silent> <F3> :ToggleNERDTreeAndTagbar<CR>
 noremap! <silent> <F3> <ESC><F3>
 noremap <silent> <S-F3> :NERDTreeClose<CR>:TagbarClose<CR>:cclose<CR>
 noremap! <silent> <S-F3> <ESC><S-F3>
