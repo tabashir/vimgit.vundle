@@ -35,10 +35,32 @@ au BufNewFile,BufRead *.js,*.html,*.css:
     \ set shiftwidth=2
 command! FormatJSON %!python -m json.tool
 
+
+function! NerdToggle()
+ if exists("g:NERDTree") && g:NERDTree.IsOpen()
+   NERDTreeClose
+ else
+   if bufexists(expand('%'))
+     NERDTreeFind
+   else
+     NERDTree
+   endif
+ endif
+endfunction
+
+
 "Easy Typing Aliases
-command! NTF NERDTreeFind
-command! AGG Ag
+command! NTF ::NERDTreeFind
+command! NTO ::NERDTreeOpen
+command! NTT call NerdToggle()
+command! TTT TagbarToggle
 command! PPP set paste!
+
+function! AG(...)
+    execute 'Ag ' . join(a:000)
+endfunction
+
+command! -nargs=+ AGG call AG(<f-args>)
 
 " Ruby Setup
 au BufEnter,BufNewFile,BufReadPost *.rb set syntax=ruby
@@ -152,4 +174,3 @@ endfun
 
 command! TrimWhitespace call TrimWhitespace()
 
-command! NTF ::NERDTreeFind
